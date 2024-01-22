@@ -1,9 +1,9 @@
-#**1. NLP기본개념**
+# **1. NLP기본개념**
 
-###1-1. 토큰(Token)
+### 1-1. 토큰(Token)
 - 가장 기본이 되는 단어
 - 토큰의 단위는 자연어 내에서 의미를 가지는 최소 단위로 정의
-###1-2. 토크나이징(Tokenizing)
+### 1-2. 토크나이징(Tokenizing)
 - 토큰화 작업은 주어진 코퍼스 내 자연어 문장들을 토큰(최소 단위)으로 나누는 작업
 
 > 코퍼스는 자연어 처리 연구나 애플리케이션 활용을 염두에 두고 수집된 텍스트 데이터셋을 의미, 쉽게 말해서 말뭉치
@@ -14,7 +14,7 @@
 - 사이버 보안, NFT 생성에 사용되는 것으로 유명
 - 자연어 프로세스의 중요한 부분 차지
 
-###1-3. 토큰화 방법
+### 1-3. 토큰화 방법
 - 문장 토큰화: 토큰의 기준을 문장으로 하는 토큰화 방법
     - 문장의 끝에 오는 문장 부호를 기준으로 코퍼스를 잘라냄(. 또는 ! 또는 ?)
     - 예) 빵상! 인간들아. 라는 뜻이란다.
@@ -37,7 +37,7 @@
 
 
 
-#**2. BPE**
+# **2. BPE**
 
 - 코퍼스 내 단어의 등장 빈도에 따라 서브워드를 구축하는데 사용
 - [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909) 2016년 논문에서 처음 제안
@@ -68,7 +68,7 @@
 
 
 
-#**3. Word Piece**
+# **3. Word Piece**
 - [Google's Neural Machine Translation System Bridging the Gap between Human and Machine Translation](https://arxiv.org/abs/1609.08144) 구글이 2016년도 논문에 처음 공개한 BPE의 변형 알고리즘
 - "Word Piece"는 기본적으로 BPE(Byte Pair Encoding)와 유사한 방식으로 작동하지만, BPE가 자주 발생하는 쌍만을 병합하는 것과는 달리, "Word Piece"는 언어 모델 perplexity 측면에서의 관점을 중시
 - 병합할 두 문자가 있을 때 각각의 문자가 따로 있을 때를 더 중요시 여기는지, 병합되었을 때를 더 중요시 여기는지에 차이점을 둠
@@ -99,7 +99,7 @@
 
 
 
-#**4. BPE와 Word Piece의 차이**
+# **4. BPE와 Word Piece의 차이**
 - Word Piece는 BPE보다 언어학적으로 더 세부적인 단위를 생성.
 - 사전 훈련된 트랜스포머 모델에서 Unigram Language Model이 더 효과적으로 작동하는 것에 대한 일부 증거가 있으며, 다른 연구는 여러 토크나이제이션을 거쳐 앙상블을 수행
 
