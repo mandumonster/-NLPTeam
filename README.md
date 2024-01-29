@@ -69,7 +69,7 @@ p(yₜ | {y₁, ..., yₜ₋₁} , c) = g(yₜ₋₁, sₜ, c)   (3)   디코더
 이 섹션에서는 신경 기계 번역을 위한 새로운 아키텍처를 제안. 이 새로운 아키텍처는 인코더로 양방향 RNN(Recurrent Neural Network)을 사용하며(3.2절), 디코딩 중에 번역을 수행하면서 소스 문장을 검색하는 디코더를 포함하고 있음(3.1절).
 
 
-### 3-0. 용어
+### 3-0. 용어 설명!!!
    - f: LSTM function
    - q: forward rnn
    - alpha: feedforward rnn
@@ -78,7 +78,7 @@ p(yₜ | {y₁, ..., yₜ₋₁} , c) = g(yₜ₋₁, sₜ, c)   (3)   디코더
    - hj: encoder의 hidden state
    - i, j: decoder 및 encoder의 time step
    - Align: attention
-   - annotation: hidden-state
+   - annotation: hidden-state (주석이 hs라고 보면 됨)
    - e: 하이퍼볼릭 탄젠트를 사용하여 NN을 구할 때의 값 
 
 ### 3.1 DECODER: GENERAL DESCRIPTION
