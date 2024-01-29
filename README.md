@@ -84,13 +84,13 @@ sᵢ = f(sᵢ₋₁, yᵢ₋₁, cᵢ)
 컨텍스트 벡터 cᵢ는 입력 문장을 인코더가 매핑한 주석(annotations) 시퀀스 (h₁, ..., hₜₓ)에 의존합. 각 주석 hᵢ는 입력 시퀀스의 i번째 단어 주변의 부분에 중점을 둔 정보를 포함. 다음 섹션에서는 주석이 어떻게 계산되는지에 대한 자세한 설명을 제공.
 
 그런 다음 컨텍스트 벡터 cᵢ는 이러한 주석들 hᵢ의 가중 합으로 계산:
-
+(벡터 (고정되지 않음))
 ![image](https://github.com/mandumonster/-NLPTeam/assets/113160870/82484496-66f6-47da-b5bf-45b20eade869)
   (5)
 
 각 주석 hⱼ의 가중치 αᵢⱼ는 다음과 같이 계산:
 
-(벡터 (고정되지 않음))
+(가중치))
 ![image](https://github.com/mandumonster/-NLPTeam/assets/113160870/4cd9c44e-0cd0-4aca-9e80-a2a55ec4bbeb)
    (6)
 
