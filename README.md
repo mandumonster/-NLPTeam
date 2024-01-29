@@ -44,16 +44,12 @@
 
 **Encoder-Decoder 프레임워크:**
 
-Encoder-Decoder 프레임워크에서 인코더는 입력 문장, 즉 벡터의 시퀀스 x = (x1, · · · , xTx)를 벡터 c로 읽어들임. 가장 흔한 방법은 RNN을 사용하는 것이며, 이를 통해 다음과 같이 표현됨
+Encoder-Decoder 프레임워크에서 인코더는 입력 문장, 즉 벡터의 시퀀스 \( x = (x_1, \ldots, x_{T_x}) \)를 벡터 \( c \)로 읽어들임. 가장 흔한 방법은 RNN을 사용하는 것이며, 이를 통해 다음과 같이 표현됨:
 
-\[
-h_t = f(x_t, h_{t-1}) \quad \text{(1)}
-\]
+\[ h_t = f(x_t, h_{t-1}) \quad (1) \]
 
-\[
-c = q(\{h_1, · · · , h_{T_x}\})
-\]
+\[ c = q(\{h_1, \ldots, h_{T_x}\}) \]
 
-여기서 \(h_t \in \mathbb{R}^n\)은 시간 t에서의 hidden state이며, c는 hidden state의 시퀀스에서 생성된 벡터입니다. f와 q는 어떤 비선형 함수를 나타냅니다. 예를 들어, Sutskever 등(2014)은 f로 LSTM을 사용하였으며, q는 \(q(\{h_1, · · · , h_T\}) = h_T\)와 같이 구현되었습니다.
+여기서 \( h_t \in \mathbb{R}^n \)은 시간 \( t \)에서의 hidden state이며, \( c \)는 hidden state의 시퀀스에서 생성된 벡터입니다. \( f \)와 \( q \)는 어떤 비선형 함수를 나타냅니다. 예를 들어, Sutskever 등(2014)은 \( f \)로 LSTM을 사용하였으며, \( q \)는 \( q(\{h_1, \ldots, h_T\}) = h_T \)와 같이 구현되었습니다.
 
 ---
